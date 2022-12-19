@@ -1,0 +1,156 @@
+.Prueba{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+.logo{
+    width: 140px;
+    display: inline;
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    top: -100px;
+    right: 95px;
+}
+
+.logoGoogle{
+    width: 100px;
+    display: inline;
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    top: -70px;
+    right: 115px;
+}
+.card{
+    width: 22rem;
+    top: 100px;
+    height: 250px;
+    margin: auto;
+    position: relative;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.section{
+    margin-top: 150px;
+    height: 450px;
+    background-color: black;
+
+}
+
+.sectionUno{
+    background-image: url("./assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.sectionDos{
+
+    height: 450px;
+    background-color: black;
+}
+
+
+@font-face {
+    font-family: Montserrat;
+    src: url('Montserrat-VariableFont_wght.ttf');
+}
+
+p{
+  font-family: Montserrat;   
+  font-weight: lighter;
+}
+
+h3{
+    color: white;
+    font-family: Montserrat;
+    size: 20px;
+    text-align: center;
+    margin: 30px;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+h4{
+    font-size: large;
+    top: 30px;
+    font-weight: bolder;
+    color: white;
+    font-family: Montserrat;
+    size: 13px;
+    text-align: center;
+}
+
+h5{
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+
+.text-card{
+    text-align: center;
+    font-size:x-small;
+}
+
+.btn-negro{
+    font-family: Montserrat;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    border-radius: 35px;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    padding: 5px 25px;
+    display: inline-block;
+}
+
+
+
+
+.btn-negro:hover{
+    font-family: Montserrat;
+    font-weight: bold;
+    text-align: center;
+    border-color: black;
+    background-color: rgb(0, 0, 0);
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 6px 26px;
+    display: inline-block;
+}
+
+.btn-negro::after{
+    content: "";
+    border-radius: 35px;
+    background: #ffffff; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    /* padding: 16px 20px; */
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    -webkit-transition: all 0.01s;
+    transition: all 0.90s;
+}
+
+.btn-negro:hover::after{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.01s;
+    transition: all 0.90s;
+}
